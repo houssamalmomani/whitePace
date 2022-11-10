@@ -1,0 +1,169 @@
+doctype html 
+html 
+ head
+  title Whitepace
+  link(rel="preconnect" href="https://fonts.googleapis.com")
+  link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+  link(href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@400;500;700&display=swap" rel="stylesheet")
+  link(rel="stylesheet", href="style.css") 
+  link(link rel="icon" type="image/x-icon" href="/images/favicon.ico")
+ body.main__container
+    header.header
+        div.header__logo-box
+            a(href="")
+                img.header__logo(src="images/Logo.png", alt="logo" width="144px")     
+     
+        div.navigation
+            input.navigation__checkbox(type="checkbox" id="navi-toggle")
+            label.navigation__button(for="navi-toggle") 
+                span.navigation__icon &nbsp;
+            div.navigation__background 
+
+            nav.navigation__nav
+                ul.navigation__list
+                    li.navigation__item 
+                        a.navigation__link(href="")  
+                            p Products 
+                                img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
+                    li.navigation__item
+                        a.navigation__link(href="")  
+                            p Solutions
+                                img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
+                    li.navigation__item 
+                        a.navigation__link(href="")  
+                            p Resources 
+                                img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
+                    li.navigation__item
+                        a.navigation__link(href="")  
+                            p Pricing 
+                                img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
+                
+                button.heder__btn--login Login
+                button.btn--blue Try Whitepace Free
+                    img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
+        nav.navigation 
+
+    section.hero-section
+        
+        div.hero-section___box--text
+            h1.h1-size Get More Done with Whitepace   
+            p management software that enables your teams to collaborate, plan, analyze and manage everyday tasks  
+            button.btn--blue Try Whitepace Free
+                img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
+        div.hero__box--img
+            img.header__img(src="images/Image-container.png", alt="some photo" )  
+    section.work-management
+        div.work-management__text
+            h1.h1-size Project Management
+            p Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.
+            button.btn--blue.btn__blue--size Get Started
+                img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
+        div.work-management__img
+            img.header__img(src="images/Image-container.png", alt="some photo" )
+        div.work-management__img
+            img(src="images/Work Together Image.png", alt="")    
+        div.work-management__text
+            h1.h1-size Work together
+            p With whitepace, share your notes with your colleagues and collaborate on them.You can also publish a note to the internet and share the URL with others.
+            button.btn--blue.btn__blue--size Try it now
+                img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
+
+             
+    section.customize-it
+        div.customize-it__text
+            h1.h1-size.h1-white Use as Extension
+            p.p-white Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
+            button.btn--blue.btn__blue--size Let’s Go
+                img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
+        div.customize-it__img     
+            img(src="images/custmise-sec.png", alt="")
+    section.customize-it-two
+        div.customize-it-two__text
+            h1.h1-size Customize it to your needs
+            p Customize the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
+            button.btn--blue.btn__blue--size Let’s Go
+                img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow") 
+        div.customize-it-two__img        
+            img(src="images/customize2.png", alt="")
+    section.pricing
+        div.u-center-text.umargin-bottom-big
+            h2.heading-secondary Choose your plan
+            p Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
+        div.pricing__cards
+            div.pricing__cards--left Test 1
+            div.pricing__cards--center Test 2
+            div.pricing__cards--right Test 3
+    section.your-work
+        div.your-work__text
+            h1.h1-size.h1-white Your work, everywhere you are
+            p.p-white Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!
+            button.btn--blue.btn__blue--size Try Taskey
+                img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
+
+    section.your-data
+        div.your-data__text
+            h1.h1-size 100% your data
+            p The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+                button.btn--blue.btn__blue--size Read more
+                    img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
+
+        div.your-data__img    
+            img(src="images/icons/your data img.png", alt="")
+    section.our-sponsors
+        div.our-sponsors__text    
+            h1.h1-size Our sponsors
+        div.our-sponsors__icons    
+
+    section.apps
+        div.apps__img
+            img(src="images/icons/Apps.png", alt="")
+        div.apps__text
+            h1.h1-size.h1-white Work with Your Favorite Apps Using whitepace
+            p.p-white Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
+            button.btn--blue.btn__blue--size Read more
+                img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")    
+
+    section.testimonia
+        div.testimonia__text    
+            h1.h1-size.h1-whtie What Our Clients Says
+        div.testimonia__slider    
+    section.free-trial
+        div.free-trial__box   
+            h1.h1-size.h1-white Try Whitepace today
+            p.p-white Get started for free.Add your whole team as your needs grow.
+            button.btn--blue.btn__blue--size Try Taskey free
+                img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
+            p.p-white On a big team? Contact sales
+        div.free-trial__icons
+            img(src="images/icons/App-icon.png", alt="")
+    footer.footer
+        div.footer__whitepace
+            img(src="images/Logo.png", alt="" width="144px")
+            p.p-white whitepace was created for the new ways we live and work. We make a better workspace around the world
+        div.footer__product
+            h2 Product
+            a(href="") Overview 
+            a(href="") Pricing 
+            a(href="") Customer stories
+        div.footer__resources
+            h2 resources
+            ul
+                a(href="") Blog
+                a(href="") Guides & tutorials
+                a(href="") Help center
+        div.footer__company
+            h2 Company
+            a(href="") About us 
+            a(href="") Careers
+            a(href="") Media kit
+        div.footer__try-it
+            h2 Try It Today
+            p.p-white Get started for free.Add your whole team as your needs grow.
+            button.btn--blue.btn__blue--size Start today
+                img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")  
+            hr        
+        div.footer__social
+            a(href="") English
+            a(href="") Terms & privacy
+            a(href="") Security
+            a(href="") Status

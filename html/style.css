@@ -29,7 +29,6 @@ body {
     [center-end] 1fr [right-end];
 }
 .header {
-  display: grid;
   grid-column: left-start/right-end;
   background-color: var(--primaryDark);
 }
@@ -194,10 +193,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-footer a {
+.footer ul {
+  list-style-type: none;
+}
+.footer a {
   text-decoration: none;
   color: var(--whiteSecondary);
-  display: ;
 }
 .free-trial__box {
   text-align: center;
@@ -206,6 +207,14 @@ footer a {
   text-align: center;
 }
 .footer__whitepace {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  letter-spacing: -0.02em;
 }
 .footer__social a {
   font-family: 'Inter';
@@ -217,7 +226,7 @@ footer a {
   text-decoration: none;
   color: var(--whiteSecondary);
 }
-.footer__social a:hover {
+.footer a:hover {
   color: lightslategray;
 }
 /* *********************************************ELEMENT SELECTOR*********************************************** */
@@ -740,11 +749,11 @@ p {
 }
 .navigation__button {
   background-color: var(--primaryDark);
-  height: 7rem;
-  width: 7rem;
+  height: 4rem;
+  width: 4rem;
   position: fixed;
-  top: 0px;
-  right: 100px;
+  top: 10px;
+  right: 50px;
   border-radius: 50%;
 
   z-index: 2000;
@@ -752,12 +761,12 @@ p {
   cursor: pointer;
 }
 .navigation__background {
-  width: 6rem;
-  height: 6rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   position: fixed;
-  top: 5px;
-  right: 104.5px;
+  top: 20px;
+  right: 60px;
   z-index: 1000;
   background-image: radial-gradient(var(--primaryDark), var(--primaryLight));
   transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -767,8 +776,8 @@ p {
 .navigation__nav {
   height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 1;
+  left: 1;
   display: none;
   transition: all 0.8s;
   z-index: 1500;
@@ -780,17 +789,17 @@ p {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  width: 1000%;
+  width: 100%;
 }
 .navigation__item {
-  margin: 5rem;
+  margin: 3rem;
 }
 .navigation__link,
 .navigation__link:link,
 .navigation__link:visited {
   display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 3rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--whiteSecondary);
   text-decoration: none;
@@ -823,13 +832,13 @@ p {
 /* //NAVIGATION ICON */
 .navigation__icon {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 2.1rem;
   border-radius: 2px;
 }
 .navigation__icon,
 .navigation__icon::before,
 .navigation__icon::after {
-  width: 3rem;
+  width: 2rem;
   height: 2px;
   background-color: var(--whiteSecondary);
   display: inline-block;

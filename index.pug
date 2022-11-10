@@ -23,19 +23,19 @@ html
                 ul.navigation__list
                     li.navigation__item 
                         a.navigation__link(href="")  
-                            p Products 
+                            h4 Products 
                                 img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
                     li.navigation__item
                         a.navigation__link(href="")  
-                            p Solutions
+                            h4 Solutions
                                 img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
                     li.navigation__item 
                         a.navigation__link(href="")  
-                            p Resources 
+                            h4 Resources 
                                 img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
                     li.navigation__item
                         a.navigation__link(href="")  
-                            p Pricing 
+                            h4 Pricing 
                                 img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
                 
                 button.heder__btn--login Login
@@ -137,25 +137,37 @@ html
         div.free-trial__icons
             img(src="images/icons/App-icon.png", alt="")
     footer.footer
+        
         div.footer__whitepace
             img(src="images/Logo.png", alt="" width="144px")
             p.p-white whitepace was created for the new ways we live and work. We make a better workspace around the world
         div.footer__product
             h2 Product
-            a(href="") Overview 
-            a(href="") Pricing 
-            a(href="") Customer stories
+            ul 
+                li
+                    a(href="") Overview 
+                li
+                    a(href="") Pricing 
+                li
+                    a(href="") Customer stories
         div.footer__resources
             h2 resources
             ul
-                a(href="") Blog
-                a(href="") Guides & tutorials
-                a(href="") Help center
+                li 
+                    a(href="") Blog
+                li
+                    a(href="") Guides & tutorials   
+                li
+                    a(href="") Help center
         div.footer__company
             h2 Company
-            a(href="") About us 
-            a(href="") Careers
-            a(href="") Media kit
+            ul 
+                li
+                    a(href="") About us 
+                li
+                    a(href="") Careers
+                li
+                    a(href="") Media kit
         div.footer__try-it
             h2 Try It Today
             p.p-white Get started for free.Add your whole team as your needs grow.

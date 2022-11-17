@@ -1,0 +1,73 @@
+.btn {
+  &--animation {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+  &--blue:link,
+  &--blue:visited {
+    transition: all 0.2s;
+    position: absolute;
+  }
+  &--blue:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  &--blue:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  &--blue::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  &--blue::after {
+    background-color: $color-primary-light;
+  }
+  &--blue:hover::after {
+    opacity: 0;
+    transform: scalex(1.4) scaleY(1.6);
+  }
+}
+.header {
+  &__btn--login:link,
+  &__btn--login:visited {
+    transition: all 0.2s;
+    position: absolute;
+  }
+
+  &__btn--login:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  &__btn--login:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  &__btn--login::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  &__btn--login::after {
+    background-color: $color-light-yellow;
+  }
+  &__btn--login:hover::after {
+    opacity: 0;
+    transform: scalex(1.4) scaleY(1.6);
+  }
+}

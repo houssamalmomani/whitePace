@@ -1,0 +1,9 @@
+.main__container {
+  display: grid;
+  grid-template-columns:
+    [left-start]1fr[left-end center-start] repeat(
+      4,
+      [col-start] minmax(min-content, 100rem) [col-end]
+    )
+    [center-end] 1fr [right-end];
+}

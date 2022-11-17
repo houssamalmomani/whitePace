@@ -7,7 +7,7 @@ html
   link(href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@400;500;700&display=swap" rel="stylesheet")
   link(rel="stylesheet", href="../css/main.css") 
   link(link rel="icon" type="image/x-icon" href="/images/favicon.ico")
-  link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+  link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper/scss/bundle")
   script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
   meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
  body.main__container
@@ -27,19 +27,19 @@ html
             nav.navigation__nav
                 ul.navigation__list
                     li.navigation__item 
-                        a.navigation__link(href="")  
+                        a.navigation__link(href="#products")  
                             h4 Products 
                                 img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
                     li.navigation__item
-                        a.navigation__link(href="")  
+                        a.navigation__link(href="#solutions")  
                             h4 Solutions
                                 img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
                     li.navigation__item 
-                        a.navigation__link(href="")  
+                        a.navigation__link(href="#resources")  
                             h4 Resources 
                                 img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
                     li.navigation__item
-                        a.navigation__link(href="")  
+                        a.navigation__link(href="#pricing")  
                             h4 Pricing 
                                 img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
             div.header__btn-box
@@ -59,7 +59,7 @@ html
             div.hero-section__box--img
                 img(src="images/Image-container.png", alt="some photo", )  
 
-    section.work-management
+    section.work-management#products
         div.work-management__top-box
             div.work-management__text.BG__one
                 h1.h1-size Project Management
@@ -79,7 +79,7 @@ html
                     img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
 
              
-    section.customize-it
+    section.customize-it#solutions
         div.customize-it__text
             h1.h1-size.text-white Use as Extension
             p.p-white Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
@@ -99,95 +99,96 @@ html
                 img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow") 
 
 
-    section.pricing
+    section.pricing#pricing
         div.pricing__text
             h1 Choose Your Plan
             p Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Every note has the right plan for you.
         div.pricing__cards
-            div.pricing__cards--left 
-                div.pricing__card--details
-                    h3 Free
-                    h2 $0
-                    p Keep home and family on track
-                div.pricing__card--plan
-                    ul
+            
+                div.pricing__cards--left 
+                    div.pricing__card--details
+                        h3 Free
+                        h2 $0
+                        p Keep home and family on track
+                    div.pricing__card--plan
+                        ul
                          
-                        li
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p Sync unlimited devices
-                        li         
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p 10 GB monthly uploads
-                        li         
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p 200 MB max. note size
-                        li 
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p Customize Home dashboard and access extra widgets
-                        li         
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p Connect primary Google Calendar account
-                        li         
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p Add due dates, reminders, and notifications to your tasks
-                        button.pricing__cards--btn Get Started
-            div.pricing__cards--center 
-                div.pricing__center--details
-                    h3.p-white Personal
-                    h2 $11.99
-                    p.text-white Keep home and family on track
-                div.pricing__center--plan
-                    ul
-                        li
-                            img(src="images/favicon.ico/price icon G.png", alt="")
-                            p.text-white Sync unlimited devices
-                        li         
-                            img(src="images/favicon.ico/price icon G.png", alt="")
-                            p.text-white 10 GB monthly uploads
-                        li         
-                            img(src="images/favicon.ico/price icon G.png", alt="")
-                            p.text-white 200 MB max. note size
-                        li 
-                            img(src="images/favicon.ico/price icon G.png", alt="")
-                            p.text-white Customize Home dashboard and access extra widgets
-                        li         
-                            img(src="images/favicon.ico/price icon G.png", alt="")
-                            p.text-white Connect primary Google Calendar account
-                        li         
-                            img(src="images/favicon.ico/price icon G.png", alt="")
-                            p.text-white Add due dates, reminders, and notifications to your tasks
-                        button.btn--blue.btn__blue--size Get started
+                            li
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p Sync unlimited devices
+                            li         
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p 10 GB monthly uploads
+                            li         
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p 200 MB max. note size
+                            li 
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p Customize Home dashboard and access extra widgets
+                            li         
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p Connect primary Google Calendar account
+                            li         
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p Add due dates, reminders, and notifications to your tasks
+                            button.pricing__cards--btn Get Started
+                div.pricing__cards--center 
+                    div.pricing__center--details
+                        h3.p-white Personal
+                        h2 $11.99
+                        p.text-white Keep home and family on track
+                    div.pricing__center--plan
+                        ul
+                            li
+                                img(src="images/favicon.ico/price icon G.png", alt="")
+                                p.text-white Sync unlimited devices
+                            li         
+                                img(src="images/favicon.ico/price icon G.png", alt="")
+                                p.text-white 10 GB monthly uploads
+                            li         
+                                img(src="images/favicon.ico/price icon G.png", alt="")
+                                p.text-white 200 MB max. note size
+                            li 
+                                img(src="images/favicon.ico/price icon G.png", alt="")
+                                p.text-white Customize Home dashboard and access extra widgets
+                            li         
+                                img(src="images/favicon.ico/price icon G.png", alt="")
+                                p.text-white Connect primary Google Calendar account
+                            li             
+                                img(src="images/favicon.ico/price icon G.png", alt="")
+                                p.text-white Add due dates, reminders, and notifications to your tasks
+                            button.btn--blue.btn__blue--size Get started
 
-            div.pricing__cards--right 
-                div.pricing__card--details
-                    h3 Organization
-                    h2 $49.99
-                    p Keep home and family on track
-                div.pricing__card--plan
-                    ul
-                        li
+                div.pricing__cards--right 
+                    div.pricing__card--details
+                        h3 Organization
+                        h2 $49.99
+                        p Keep home and family on track
+                    div.pricing__card--plan
+                        ul
+                            li
                         
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p Sync unlimited devices
-                        li         
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p 10 GB monthly uploads
-                        li         
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p 200 MB max. note size
-                        li 
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p Customize Home dashboard and access extra widgets
-                        li         
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p Connect primary Google Calendar account
-                        li         
-                            img(src="images/favicon.ico/price icon B.png", alt="")
-                            p Add due dates, reminders, and notifications to your tasks
-                        button.pricing__cards--btn Get Started
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p Sync unlimited devices
+                            li         
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p 10 GB monthly uploads
+                            li         
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p 200 MB max. note size
+                            li 
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p Customize Home dashboard and access extra widgets
+                            li         
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p Connect primary Google Calendar account
+                            li         
+                                img(src="images/favicon.ico/price icon B.png", alt="")
+                                p Add due dates, reminders, and notifications to your tasks
+                            button.pricing__cards--btn Get Started
 
             
-    section.your-work
+    section.your-work#resources
         div.your-work__text
             h1.h1-size.text-white Your work, everywhere you are
             p.p-white Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!

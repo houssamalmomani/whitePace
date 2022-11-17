@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/main.css"/>
     <link link="link" rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper/scss/bundle"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
   </head>
@@ -20,13 +20,13 @@
         <div class="navigation__background"> </div>
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <li class="navigation__item"> <a class="navigation__link" href=""> 
+            <li class="navigation__item"> <a class="navigation__link" href="#products"> 
                 <h4>Products <img class="header__icons--size" src="images/favicon.ico//Vector.png" alt="down arrow"/></h4></a></li>
-            <li class="navigation__item"><a class="navigation__link" href=""> 
+            <li class="navigation__item"><a class="navigation__link" href="#solutions"> 
                 <h4>Solutions<img class="header__icons--size" src="images/favicon.ico//Vector.png" alt="down arrow"/></h4></a></li>
-            <li class="navigation__item"> <a class="navigation__link" href=""> 
+            <li class="navigation__item"> <a class="navigation__link" href="#resources"> 
                 <h4>Resources <img class="header__icons--size" src="images/favicon.ico//Vector.png" alt="down arrow"/></h4></a></li>
-            <li class="navigation__item"><a class="navigation__link" href=""> 
+            <li class="navigation__item"><a class="navigation__link" href="#pricing"> 
                 <h4>Pricing <img class="header__icons--size" src="images/favicon.ico//Vector.png" alt="down arrow"/></h4></a></li>
           </ul>
         </nav>
@@ -45,7 +45,7 @@
       </div>
       <div class="hero-section__box--img"><img src="images/Image-container.png" alt="some photo"/></div>
     </section>
-    <section class="work-management">
+    <section class="work-management" id="products">
       <div class="work-management__top-box">
         <div class="work-management__text BG__one">
           <h1 class="h1-size">Project Management</h1>
@@ -63,7 +63,7 @@
         </div>
       </div>
     </section>
-    <section class="customize-it">
+    <section class="customize-it" id="solutions">
       <div class="customize-it__text">
         <h1 class="h1-size text-white">Use as Extension</h1>
         <p class="p-white">Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
@@ -79,7 +79,7 @@
         <button class="btn--blue btn__blue--size">Let’s Go<img class="header__icons--size" src="images/favicon.ico/Right arrow Icon.png" alt="right arrow"/></button>
       </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <div class="pricing__text">
         <h1>Choose Your Plan</h1>
         <p>Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Every note has the right plan for you.</p>
@@ -138,7 +138,7 @@
               <li>        <img src="images/favicon.ico/price icon G.png" alt=""/>
                 <p class="text-white">Connect primary Google Calendar account</p>
               </li>
-              <li>        <img src="images/favicon.ico/price icon G.png" alt=""/>
+              <li>            <img src="images/favicon.ico/price icon G.png" alt=""/>
                 <p class="text-white">Add due dates, reminders, and notifications to your tasks</p>
               </li>
               <button class="btn--blue btn__blue--size">Get started</button>
@@ -177,7 +177,7 @@
         </div>
       </div>
     </section>
-    <section class="your-work">
+    <section class="your-work" id="resources">
       <div class="your-work__text">
         <h1 class="h1-size text-white">Your work, everywhere you are</h1>
         <p class="p-white">Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</p>

@@ -103,9 +103,9 @@ html
         div.pricing__text
             h1 Choose Your Plan
             p Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Every note has the right plan for you.
-        div.pricing__cards
-            
-                div.pricing__cards--left 
+        div.pricing__cards.swiper
+            div.swiper-wrapper
+                div.pricing__cards--left.swiper-slide 
                     div.pricing__card--details
                         h3 Free
                         h2 $0
@@ -132,7 +132,7 @@ html
                                 img(src="images/favicon.ico/price icon B.png", alt="")
                                 p Add due dates, reminders, and notifications to your tasks
                             button.pricing__cards--btn Get Started
-                div.pricing__cards--center 
+                div.pricing__cards--center.swiper-slide 
                     div.pricing__center--details
                         h3.p-white Personal
                         h2 $11.99
@@ -159,7 +159,7 @@ html
                                 p.text-white Add due dates, reminders, and notifications to your tasks
                             button.btn--blue.btn__blue--size Get started
 
-                div.pricing__cards--right 
+                div.pricing__cards--right.swiper-slide 
                     div.pricing__card--details
                         h3 Organization
                         h2 $49.99
@@ -186,7 +186,7 @@ html
                                 img(src="images/favicon.ico/price icon B.png", alt="")
                                 p Add due dates, reminders, and notifications to your tasks
                             button.pricing__cards--btn Get Started
-
+            div.swiper-pagination
             
     section.your-work#resources
         div.your-work__text
@@ -228,10 +228,10 @@ html
     section.testimonia
         div.testimonia__text    
             h1.h1-size What Our Clients Says
-        div.swiper.mySwiper
-            div.swiper-wrapper
-                div.swiper-slide
-                    div.testimonia__cards--white
+        div.swiper
+            div.swiper-wrapper.testimonia__wrapper
+               
+                    div.testimonia__cards--white.swiper-slide
                         div.testimonia__card--text
                             img(src="images/icons/Quote B.png", alt="")
                             p Whitepace is designed as a collaboration tool for businesses that is a full project management solution.
@@ -240,8 +240,8 @@ html
                             img(src="images/avatar/Avater 1.png", alt="") 
                             h3 Oberon Shaw, MCH
                                 p Head of Talent Acquisition, North America
-                div.swiper-slide  
-                    div.testimonia__cards--blue
+                 
+                    div.testimonia__cards--blue.swiper-slide 
                         div.testimonia__card--text
                             img(src="images/icons/Quote W.png", alt="")   
                             p Whitepace is designed as a collaboration tool for businesses that is a full project management solution.
@@ -251,8 +251,8 @@ html
                             img(src="images/avatar/Avater 2.png", alt="") 
                             h3 Oberon Shaw, MCH
                                 p Head of Talent Acquisition, North America
-                div.swiper-slide
-                    div.testimonia__cards--blue 
+                
+                    div.testimonia__cards--blue.swiper-slide 
                         div.testimonia__card--text 
                             img(src="images/icons/Quote W.png", alt="")   
                             p Whitepace is designed as a collaboration tool for businesses that is a full project management solution.  
@@ -261,8 +261,8 @@ html
                             img(src="images/avatar/Avater 3.png", alt="") 
                             h3 Oberon Shaw, MCH
                                 p Head of Talent Acquisition, North America
-           
             div.swiper-pagination
+            
                 
 
     section.free-trial

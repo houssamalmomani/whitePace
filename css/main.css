@@ -107,7 +107,7 @@ ul {
   gap: 10px;
 }
 .header__icons--size {
-  padding-left: 10px;
+  margin-left: 20px;
 }
 .header__btn--login {
   width: 126px;
@@ -116,6 +116,11 @@ ul {
   border-radius: 8px;
   margin-right: 24px;
   margin-left: 24px;
+}
+
+#language {
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .btn--animation {
@@ -191,30 +196,17 @@ ul {
   grid-template-columns: [left-start] 1fr [left-end center-start] repeat(4, [col-start] minmax(min-content, 100rem) [col-end]) [center-end] 1fr [right-end];
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
 .swiper-slide {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  padding: 60px 40px;
-}
-.swiper__slider {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-.swiper-wrapper {
+.swiper .swiper-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
 }
-
 @media screen and (max-width: 1399px) {
   .navigation img {
     display: none;
@@ -479,8 +471,7 @@ ul {
     align-items: center;
     padding: 0px;
     gap: 32px;
-    width: 1336px;
-    height: 761px;
+    width: 1400px;
   }
   .pricing__cards--left, .pricing__cards--right {
     display: flex;
@@ -584,8 +575,6 @@ ul {
     text-align: center;
     padding: 0px;
     gap: 24px;
-    width: 1088px;
-    height: 161px;
   }
   .pricing__cards {
     display: flex;
@@ -593,16 +582,18 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 32px;
     width: 1088px;
     height: 853px;
   }
   .pricing__cards--left, .pricing__cards--right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding: 40px 44px;
     gap: 25px;
+    width: 341.33px;
+    height: 697px;
     background: #ffffff;
     border: 1px solid #ffe492;
     border-radius: 10px;
@@ -616,12 +607,13 @@ ul {
     gap: 25px;
   }
   .pricing__card--plan ul {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 28px;
+    width: 253.33px;
+    height: 340px;
   }
   .pricing__cards--center {
     display: flex;
@@ -630,6 +622,8 @@ ul {
     align-items: flex-start;
     padding: 80px 44px;
     gap: 25px;
+    width: 341.33px;
+    height: 670px;
     background: #043873;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
@@ -734,8 +728,6 @@ ul {
     align-items: flex-start;
     padding: 40px 44px;
     gap: 25px;
-    width: 472.33px;
-    height: 628px;
     background: #ffffff;
     border: 1px solid #ffe492;
     border-radius: 10px;
@@ -775,7 +767,6 @@ ul {
     align-items: flex-start;
     padding: 80px 44px;
     gap: 25px;
-    width: 472.33px;
     background: #043873;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
@@ -863,8 +854,7 @@ ul {
     align-items: center;
     padding: 0px;
     gap: 32px;
-    width: 1088px;
-    height: 692px;
+    width: 1000px;
   }
   .pricing__cards--left, .pricing__cards--right {
     display: flex;
@@ -1000,10 +990,12 @@ ul {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
     line-height: 23px;
     color: #ffffff;
     text-decoration: none;
+  }
+  .navigation__link:hover {
+    color: #ffe492;
   }
   .hero-section {
     grid-column: left-start/right-end;
@@ -1024,9 +1016,11 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 656px;
+    height: 361px;
   }
   .hero-section__btn {
-    margin-top: 60px;
+    margin-top: 36px;
   }
   .hero-section__box--img {
     animation: moveInRight 1s ease-out;
@@ -1061,6 +1055,10 @@ ul {
     width: 748px;
     height: 547px;
   }
+  .work-management__img img {
+    width: 710px;
+    height: 661px;
+  }
   .work-management__bottom-box {
     display: flex;
     flex-direction: row;
@@ -1072,6 +1070,8 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    width: 672px;
+    height: 411px;
   }
   .work-management .BG__one {
     background-image: url(../html/images/h1img.png);
@@ -1104,6 +1104,8 @@ ul {
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
+    width: 697px;
+    height: 294px;
   }
   .customize-it button {
     margin-top: 36px;
@@ -1128,6 +1130,8 @@ ul {
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
+    width: 669px;
+    height: 411px;
   }
   .customize-it-two__img img {
     width: 714px;
@@ -1156,10 +1160,7 @@ ul {
     gap: 24px;
     isolation: isolate;
     width: 1064px;
-    height: 87px;
-  }
-  .your-work button {
-    margin-top: 36px;
+    height: 171px;
   }
   .your-data {
     grid-column: left-start/right-end;
@@ -1178,6 +1179,7 @@ ul {
     gap: 24px;
     isolation: isolate;
     width: 800px;
+    height: 324px;
   }
   .your-data__img img {
     width: 681px;
@@ -1252,7 +1254,6 @@ ul {
     align-items: center;
     padding: 140px 220px;
     gap: 100px;
-    isolation: isolate;
   }
   .testimonia__wrapper {
     display: flex;
@@ -1260,8 +1261,7 @@ ul {
     align-items: center;
     padding: 0px;
     gap: 32px;
-    width: 1479px;
-    height: 498.46px;
+    width: 1500px;
   }
   .testimonia__cards--white {
     display: flex;
@@ -1332,7 +1332,11 @@ ul {
     width: 608px;
   }
   .free-trial__icons {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
   }
   .free-trial p {
     font: 100% "Inter", sans-serif;
@@ -1503,10 +1507,12 @@ ul {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
     line-height: 23px;
     color: #ffffff;
     text-decoration: none;
+  }
+  .navigation__link:hover {
+    color: #ffe492;
   }
   .hero-section {
     grid-column: left-start/right-end;
@@ -1517,19 +1523,20 @@ ul {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(2, auto);
-    justify-content: center;
     align-items: center;
     padding: 100px 32px;
-    gap: 100px;
+    gap: 150px;
   }
   .hero-section___box--text {
     animation: moveInLeft 1s ease-out;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
     gap: 24px;
   }
   .hero-section__btn {
-    margin-top: 60px;
+    margin-top: 36px;
   }
   .hero-section__box--img {
     animation: moveInRight 1s ease-out;
@@ -1557,21 +1564,23 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 0px;
     gap: 60px;
-  }
-  .work-management__img img {
-    width: 583px;
-    height: 542.76px;
   }
   .work-management .work__img img {
     width: 719px;
     height: 448px;
   }
+  .work-management__img img {
+    width: 583px;
+    height: 542.76px;
+  }
   .work-management__bottom-box {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 100px;
   }
   .work-management__text {
@@ -1778,8 +1787,7 @@ ul {
     align-items: center;
     padding: 0px;
     gap: 32px;
-    width: 1336px;
-    height: 498.46px;
+    width: 1400px;
   }
   .testimonia__cards--white {
     display: flex;
@@ -1855,7 +1863,11 @@ ul {
     height: 63px;
   }
   .free-trial__icons {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
   }
   .free-trial p {
     font: 100% "Inter", sans-serif;
@@ -1987,6 +1999,9 @@ ul {
     justify-content: space-between;
     padding: 16px 32px;
   }
+  .header__btn-box {
+    margin-right: 100px;
+  }
   .hero-section {
     grid-column: left-start/right-end;
     background-image: url(../html/images/Element.png);
@@ -2023,9 +2038,6 @@ ul {
   .hero-section__box--img img {
     width: 526px;
     height: 350.45px;
-  }
-  .header__btn-box {
-    margin-right: 50px;
   }
   .work-management {
     grid-column: left-start/right-end;
@@ -2260,14 +2272,11 @@ ul {
     grid-column: left-start/right-end;
     background-color: #ffffff;
     display: flex;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 140px 32px;
     gap: 60px;
-    width: 1152px;
-    height: 1056.46px;
   }
   .testimonia__wrapper {
     display: flex;
@@ -2275,8 +2284,7 @@ ul {
     align-items: center;
     padding: 0px;
     gap: 32px;
-    width: 1088px;
-    height: 560.46px;
+    width: 1100px;
   }
   .testimonia__cards--white {
     display: flex;
@@ -2359,7 +2367,11 @@ ul {
     height: 63px;
   }
   .free-trial__icons {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
   }
   .free-trial p {
     font: 100% "Inter", sans-serif;
@@ -2805,16 +2817,13 @@ ul {
     align-items: center;
     padding: 140px 32px;
     gap: 60px;
-    isolation: isolate;
   }
   .testimonia__wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 32px;
-    width: 1088px;
-    height: 430px;
+    width: 1100px;
   }
   .testimonia__text {
     background-image: url(../html/images/ClinetElemnt.png);
@@ -2831,9 +2840,12 @@ ul {
     align-items: flex-start;
     padding: 20px;
     gap: 49px;
+    margin-bottom: 10px;
     background: #ffffff;
-    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.08);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
+    width: 341.33px;
+    height: 430px;
   }
   .testimonia__card--text {
     display: flex;
@@ -2841,9 +2853,8 @@ ul {
     align-items: flex-start;
     padding: 0px 0px 40px;
     gap: 32px;
-    width: 293.33px;
-    height: 253.46px;
-    border-bottom: 1px solid #212529;
+    width: 301.33px;
+    height: 180px;
     border-bottom: 1px solid #212529;
   }
   .testimonia__card--clients {
@@ -2854,6 +2865,7 @@ ul {
     gap: 24px;
   }
   .testimonia__cards--blue {
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -2861,6 +2873,8 @@ ul {
     gap: 49px;
     background: #4f9cf9;
     border-radius: 10px;
+    width: 341.33px;
+    height: 430px;
   }
   .testimonia__cards--blue p {
     color: #ffffff;
@@ -2896,6 +2910,13 @@ ul {
     margin-top: 20px;
     width: 241px;
     height: 63px;
+  }
+  .free-trial__icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
   }
   .footer {
     grid-column: left-start/right-end;
@@ -3357,7 +3378,13 @@ ul {
     align-items: center;
     padding: 100px 16px;
     gap: 60px;
-    isolation: isolate;
+  }
+  .testimonia__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 1000px;
   }
   .testimonia__text {
     background-image: url(../html/images/ClinetElemnt.png);

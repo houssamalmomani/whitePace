@@ -165,8 +165,8 @@
       padding: 0px;
       gap: 32px;
       //   changes below 1920px
-      width: 1336px;
-      height: 761px;
+      width: 1400px;
+
       //   changes below 1920px
     }
 
@@ -290,8 +290,7 @@
       padding: 0px;
       gap: 24px;
       //   changes below 1920px
-      width: 1088px;
-      height: 161px;
+
       //   changes below 1920px
     }
     &__cards {
@@ -300,11 +299,6 @@
       justify-content: center;
       align-items: center;
       padding: 0px;
-      gap: 32px;
-      //   changes below 1920px
-
-      //   changes below 1920px
-
       width: 1088px;
       height: 853px;
     }
@@ -313,13 +307,14 @@
     &__cards--right {
       display: flex;
       flex-direction: column;
-
+      justify-content: center;
       align-items: flex-start;
       padding: 40px 44px;
       gap: 25px;
-      //   changes below 1400px
 
-      //   changes below 1400px
+      width: 341.33px;
+      height: 697px;
+
       background: #ffffff;
       border: 1px solid #ffe492;
       border-radius: 10px;
@@ -338,12 +333,14 @@
     }
     &__card--plan {
       ul {
-        list-style-type: none;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
         gap: 28px;
+
+        width: 253.33px;
+        height: 340px;
       }
     }
     &__cards--center {
@@ -353,6 +350,9 @@
       align-items: flex-start;
       padding: 80px 44px;
       gap: 25px;
+
+      width: 341.33px;
+      height: 670px;
 
       background: #043873;
       box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
@@ -474,8 +474,7 @@
       align-items: flex-start;
       padding: 40px 44px;
       gap: 25px;
-      width: 472.33px;
-      height: 628px;
+
       background: #ffffff;
       border: 1px solid #ffe492;
       border-radius: 10px;
@@ -519,8 +518,6 @@
       align-items: flex-start;
       padding: 80px 44px;
       gap: 25px;
-
-      width: 472.33px;
 
       background: #043873;
       box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
@@ -618,9 +615,7 @@
       align-items: center;
       padding: 0px;
       gap: 32px;
-
-      width: 1088px;
-      height: 692px;
+      width: 1000px;
     }
 
     &__cards--left,

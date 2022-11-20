@@ -1,23 +1,18 @@
 .swiper {
-  width: 100%;
-  height: 100%;
   &-slide {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 60px 40px;
-  }
-  &__slider {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
-  &-wrapper {
+
+  .swiper-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
   }
+  &-pagination {
+  }
+}
+@media screen and (max-width: 500px) {
 }

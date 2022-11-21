@@ -603,7 +603,7 @@
       list-style-type: none;
       display: flex;
       flex-direction: row;
-      gap: 42px;
+      gap: 30px;
     }
     &__item {
     }
@@ -2156,9 +2156,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 0px;
-
-      width: 1100px;
+      width: 900px;
     }
     &__text {
       background-image: url(../html/images/ClinetElemnt.png);
@@ -2809,13 +2807,12 @@
     align-items: center;
     padding: 100px 16px;
     gap: 60px;
-    &__wrapper {
+    .testimonia__wrapper {
       display: flex;
       flex-direction: row;
       align-items: center;
       padding: 0px;
-
-      width: 1000px;
+      width: 500px;
     }
     &__text {
       background-image: url(../html/images/ClinetElemnt.png);

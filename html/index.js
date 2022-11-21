@@ -1,25 +1,23 @@
 const swiper = new Swiper('.mySwiper', {
   // Default parameters
   initialSlide: 1,
+  slidesPerView: 1,
 
   centeredSlides: true,
 
-  centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
   breakpoints: {
-    250: {
+    400: {
+      slidesPerView: 1,
+    },
+    550: {
       slidesPerView: 1,
     },
 
-    400: {
-      slidesPerView: 3,
-      spaceBetween: 25,
-    },
-
-    1152: {
+    1150: {
       slidesPerView: 3,
       spaceBetween: 25,
     },

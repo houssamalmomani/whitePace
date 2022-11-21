@@ -1,0 +1,40 @@
+mixin navbar 
+    
+      header.header
+     
+        div.header__logo-box
+            a(href="")
+                span 
+                    img.header__logo(src="images/Logo.png", alt="logo" width="144px")     
+        div.navigation
+            input.navigation__checkbox(type="checkbox" id="navi-toggle")
+            label.navigation__button(for="navi-toggle") 
+                span.navigation__icon &nbsp;
+            div.navigation__background 
+
+            nav.navigation__nav
+                ul.navigation__list
+                    li.navigation__item 
+                        a.navigation__link(href="#products")  
+                            h4 Products 
+                                span 
+                                    img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
+                    li.navigation__item
+                        a.navigation__link(href="#solutions")  
+                            h4 Solutions
+                                span 
+                                    img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
+                    li.navigation__item 
+                        a.navigation__link(href="#resources")  
+                            h4 Resources 
+                                span 
+                                    img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
+                    li.navigation__item
+                        a.navigation__link(href="#pricing")  
+                            h4 Pricing 
+                                span 
+                                    img.header__icons--size(src="images/favicon.ico//Vector.png", alt="down arrow")
+            div.header__btn-box
+                button.header__btn--login Login
+                button.btn--blue Try Whitepace Free
+                    img.header__icons--size(src="images/favicon.ico/Right arrow Icon.png", alt="right arrow")
